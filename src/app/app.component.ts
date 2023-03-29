@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Inicio } from './constants/constantes';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'puertas_experimento_social';
+  titulo: string = Inicio.TITULO_APP;
 }

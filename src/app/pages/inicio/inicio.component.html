@@ -1,0 +1,17 @@
+<nb-card>
+  <nb-card-header>{{titulo}}</nb-card-header>
+  <nb-card-body>
+    <div class="row">
+      <div class="col-sm-6">
+        <form [formGroup]="nombreForm">
+          <label for="nombre" class="label"></label>
+          <input nbInput type="text" id="nombre" placeholder="Nombre" formControlName="nombre" fullWidth>
+        </form>
+      </div>
+      <div class="col-sm-6">
+        <button nbButton status="success" size="large" (click)="nuevoJuego()" [disabled]="nombreForm.invalid">Nuevo
+          juego</button>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card>

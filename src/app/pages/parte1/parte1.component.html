@@ -1,0 +1,31 @@
+<nb-card>
+  <nb-card-header>{{titulo}}</nb-card-header>
+  <nb-card-body>
+    <div class="row">
+      <div class="col-sm-6">
+        <label for="intentos" class="label">Intentos: {{count}}</label>
+      </div>
+      <div class="col-sm-6 flex-right">
+        <label for="dinero" class="label">Dinero: {{dineroString}}</label>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-4 flex-center">
+        <button (click)="add(1)" nbTooltip="{{puerta1String}}" nbTooltipStatus="success" [nbTooltipTrigger]="click"><img src="../../../assets/imgs/puerta1.png" alt="puerta1"></button>
+      </div>
+      <div class="col-sm-4 flex-center">
+        <button (click)="add(2)" nbTooltip="{{puerta2String}}" nbTooltipStatus="success" [nbTooltipTrigger]="click"><img src="../../../assets/imgs/puerta2.png" alt="puerta2"></button>
+      </div>
+      <div class="col-sm-4 flex-center">
+        <button (click)="add(3)" nbTooltip="{{puerta3String}}" nbTooltipStatus="success" [nbTooltipTrigger]="click"><img src="../../../assets/imgs/puerta3.png" alt="puerta3"></button>
+      </div>
+    </div>
+    <br>
+    <div class="row" *ngIf="count === 0">
+      <div class="col-sm-12">
+        <button nbButton status="primary" fullWidth (click)="siguiente()">Siguiente</button>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card>

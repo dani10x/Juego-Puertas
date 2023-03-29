@@ -1,0 +1,19 @@
+.label {
+  margin-left: 2%;
+}
+
+.flex-right {
+  display: flex;
+  justify-content: end;
+  align-items: baseline;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border: none;
+}

@@ -1,0 +1,28 @@
+<nb-card>
+  <nb-card-header>{{titulo}}</nb-card-header>
+  <nb-card-body>
+    <span>Felicidades {{nombre}}! El juego ha terminado</span>
+    <br><br>
+    <div class="row">
+      <div class="col-sm-12">
+        <span>Resultados Juego 1</span><br>
+        <label for="juego1" class="label">Dinero obtenido: {{juego1}}</label><br>
+        <label for="maxjuego1" class="label">Máximo dinero posible: {{maxJuego1}}</label>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-12">
+        <span>Resultados Juego 2</span><br>
+        <label for="juego1" class="label">Dinero obtenido: {{juego2}}</label><br>
+        <label for="maxjuego1" class="label">Máximo dinero posible: {{maxJuego2}}</label>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-12">
+        <button nbButton status="primary" (click)="nuevo()" fullWidth>Nuevo Juego</button>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card>
